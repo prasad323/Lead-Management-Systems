@@ -1,0 +1,197 @@
+{
+  "info": {
+    "_postman_id": "db425488-a9db-44d8-a080-033f184f60db",
+    "name": "leads",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "25776454"
+  },
+  "item": [
+    {
+      "name": "http://localhost:3000/leads/addleads",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Prasad\",\r\n  \"email\": \"prasad@gmail.com\",\r\n  \"phone\": \"9876543211\",\r\n  \"budget\": 5000000,\r\n  \"location\": \"Mumbai\",\r\n  \"source\": \"Facebook\",\r\n  \"property_type\": \"2BHK\",\r\n  \"notes\": \"Interested in sea view apartment\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/leads/addleads",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "leads",
+            "addleads"
+          ],
+          "query": [
+            {
+              "key": "search",
+              "value": "pra",
+              "disabled": true
+            },
+            {
+              "key": "source",
+              "value": "instagram",
+              "disabled": true
+            },
+            {
+              "key": "sort",
+              "value": "budget",
+              "disabled": true
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:3000/leads/dashboard",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/leads/dashboard",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "leads",
+            "dashboard"
+          ],
+          "query": [
+            {
+              "key": "search",
+              "value": "pra",
+              "disabled": true
+            },
+            {
+              "key": "source",
+              "value": "instagram",
+              "disabled": true
+            },
+            {
+              "key": "sort",
+              "value": "budget",
+              "disabled": true
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:3000/leads/getleads?status=New",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/leads/getleads?search=pra&source=instagram&status=New&sort=budget",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "leads",
+            "getleads"
+          ],
+          "query": [
+            {
+              "key": "search",
+              "value": "pra"
+            },
+            {
+              "key": "source",
+              "value": "instagram"
+            },
+            {
+              "key": "status",
+              "value": "New"
+            },
+            {
+              "key": "sort",
+              "value": "budget"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:3000/leads/4",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/leads/9",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "leads",
+            "9"
+          ],
+          "query": [
+            {
+              "key": "search",
+              "value": "pra",
+              "disabled": true
+            },
+            {
+              "key": "source",
+              "value": "instagram",
+              "disabled": true
+            },
+            {
+              "key": "sort",
+              "value": "budget",
+              "disabled": true
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:3000/leads/9",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"notes\": \"test1\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/leads/9",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "leads",
+            "9"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
